@@ -8,6 +8,45 @@ jQuery(document).ready(function() {
     function getURLParameter(name) {
         return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
     }
+    var gist = getURLParameter('gist');
+    if (!gist) {
+        $.ajax({
+            url: 'alexa-cheats.md',
+            type: 'GET',
+            dataType: 'text'
+        }).success(function(content) {
+            render(content);
+            render_sections();
+            render_info();
+        }).error(function(e) {
+            console.log('Error on ajax return.');
+        });
+    } else {
+        $.ajax({
+            url: 'https://api.github.com/gists/' + gist,
+            type: 'GET',
+            dataType: 'jsonp'
+        }).success(function(gistdata) {
+            var objects = [];
+            if (!filename) {
+                for (var file in gistdata.data.files) {
+                    if (gistdata.data.files.hasOwnProperty(file)) {
+                        var o = gistdata.data.files[file].content;
+                        if (o) {
+                            objects.push(o);
+                        }
+                    }
+                }
+            }
+            else {
+                objects.push(gistdata.data.files[filename].content);
+            }
+            render(objects[0]);
+        }).error(function(e) {
+            console.log('Error on ajax return.');
+        });
+    }
+    
     var showonly = getURLParameter('showonly');
     if (!showonly) showonly = '';
     var columns = getURLParameter('columns');
@@ -148,17 +187,5 @@ jQuery(document).ready(function() {
             }
         });
     }
-
-    $.ajax({
-        url: 'alexa-cheats.md',
-        type: 'GET',
-        dataType: 'text'
-    }).success(function(content) {
-        render(content);
-        render_sections();
-        render_info();
-    }).error(function(e) {
-        console.log('Error on ajax return.');
-    });
 
 });
