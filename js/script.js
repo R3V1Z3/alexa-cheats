@@ -9,23 +9,25 @@ jQuery(document).ready(function() {
         return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
     }
     
+    var url = 'alexa-cheats.md';
     var gist = getURLParameter('gist');
     var filename = getURLParameter('filename');
-    if (!gist) {
+    if (gist) url = 'https://api.github.com/gists/' + gist;
+//     if (!gist) {
+//         $.ajax({
+//             url: 'alexa-cheats.md',
+//             type: 'GET',
+//             dataType: 'text'
+//         }).success(function(content) {
+//             render(content);
+//             render_sections();
+//             render_info();
+//         }).error(function(e) {
+//             console.log('Error on ajax return.');
+//         });
+//     } else {
         $.ajax({
-            url: 'alexa-cheats.md',
-            type: 'GET',
-            dataType: 'text'
-        }).success(function(content) {
-            render(content);
-            render_sections();
-            render_info();
-        }).error(function(e) {
-            console.log('Error on ajax return.');
-        });
-    } else {
-        $.ajax({
-            url: 'https://api.github.com/gists/' + gist,
+            url: url,
             type: 'GET',
             dataType: 'jsonp'
         }).success(function(gistdata) {
@@ -44,10 +46,12 @@ jQuery(document).ready(function() {
                 objects.push(gistdata.data.files[filename].content);
             }
             render(objects[0]);
+            render_sections();
+            render_info();
         }).error(function(e) {
             console.log('Error on ajax return.');
         });
-    }
+   // }
     
     var showonly = getURLParameter('showonly');
     if (!showonly) showonly = '';
