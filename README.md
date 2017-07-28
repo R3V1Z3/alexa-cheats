@@ -4,10 +4,12 @@ This is an attempt at an exhaustive compilation of commands, questions and Easte
 Web-accessible front-end here:  
 https://ugotsta.github.io/alexa-cheats/
 
-The front-end provides an info panel to help with navigation. It can be hidden by pressing '?' or 'h'.  
+The front-end provides an info panel to help with navigation. It can be hidden by pressing <kbd>?</kbd> or <kbd>h</kbd>.
 
-Url parameters can be used for extra control:  
-https://ugotsta.github.io/alexa-cheats/?columns=2
+Url parameters can be used for added control:  
+https://ugotsta.github.io/alexa-cheats/?columns=3
+
+Up to 4 columns are currently allowed. Sections can be dragged around (kudos to the [Dragula](https://bevacqua.github.io/dragula/) project devs for easier access and especially for getting things neatly arranged before printing.
 
 ## Command format
 The alexa-cheats.md file holds all the key details (commands, questions, etc). The file follows standard Markdown rules along with the following for best practice.
