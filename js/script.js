@@ -10,6 +10,10 @@ jQuery(document).ready(function() {
         return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
     }
     
+    var fontsize = getURLParameter('fontsize');
+    if (!fontsize) fontsize = 110;
+    $('body').css('font-size', fontsize + '%');
+    console.log(fontsize + '%');
     var gist = getURLParameter('gist');
     var filename = getURLParameter('filename');
     if (!gist) gist = '2a06603706fd7c2eb5c93f34ed316354';
