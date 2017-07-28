@@ -148,6 +148,10 @@ ul {
   font-weight: bold;
 }
 
+#toc {
+  overflow-y: scroll;
+}
+
 #info #toc a {
   display: block;
   font-size: 0.65em;
@@ -159,4 +163,16 @@ ul {
 #info h3 {
   font-size: 1em;
   margin: 5px 0;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(49, 196, 243, 0.5);
+    border: solid whiteSmoke 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(49, 196, 243, 1);
 }
