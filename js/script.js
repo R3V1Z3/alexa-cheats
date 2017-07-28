@@ -25,7 +25,7 @@ jQuery(document).ready(function() {
         });
     } else {
         $.ajax({
-            url: url,
+            url: 'https://api.github.com/gists/' + gist,
             type: 'GET',
             dataType: 'jsonp'
         }).success(function(gistdata) {
