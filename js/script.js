@@ -70,10 +70,10 @@ jQuery(document).ready(function() {
     
     function render_sections() {
         
-        // opening explanatory section
+        // header section
         $('h1').each(function() {
-            $(this).nextUntil("h2").andSelf().wrapAll('<section id="opening"/>');
-            $(this).wrapInner('<a name="opening"/>');
+            $(this).nextUntil("h2").andSelf().wrapAll('<section id="header"/>');
+            $(this).wrapInner('<a name="header"/>');
         });
         
         // command sections
@@ -87,7 +87,7 @@ jQuery(document).ready(function() {
         });
         
         // wrap all command sections in new section
-        $('#opening').siblings().wrapAll('<section id="commands"/>');
+        $('#header').siblings().wrapAll('<section id="commands"/>');
         
         columnize(columns);
         
