@@ -11,45 +11,32 @@ jQuery(document).ready(function() {
     
     var gist = getURLParameter('gist');
     var filename = getURLParameter('filename');
-    if (!gist) {
-        $.ajax({
-            url: 'alexa-cheats.md',
-            type: 'GET',
-            dataType: 'text'
-        }).success(function(content) {
-            render(content);
-            render_sections();
-            render_info();
-        }).error(function(e) {
-            console.log('Error on ajax return.');
-        });
-    } else {
-        $.ajax({
-            url: 'https://api.github.com/gists/' + gist,
-            type: 'GET',
-            dataType: 'jsonp'
-        }).success(function(gistdata) {
-            var objects = [];
-            if (!filename) {
-                for (var file in gistdata.data.files) {
-                    if (gistdata.data.files.hasOwnProperty(file)) {
-                        var o = gistdata.data.files[file].content;
-                        if (o) {
-                            objects.push(o);
-                        }
+    if (!gist) gist = '2a06603706fd7c2eb5c93f34ed316354';
+    $.ajax({
+        url: 'https://api.github.com/gists/' + gist,
+        type: 'GET',
+        dataType: 'jsonp'
+    }).success(function(gistdata) {
+        var objects = [];
+        if (!filename) {
+            for (var file in gistdata.data.files) {
+                if (gistdata.data.files.hasOwnProperty(file)) {
+                    var o = gistdata.data.files[file].content;
+                    if (o) {
+                        objects.push(o);
                     }
                 }
             }
-            else {
-                objects.push(gistdata.data.files[filename].content);
-            }
-            render(objects[0]);
-            render_sections();
-            render_info();
-        }).error(function(e) {
-            console.log('Error on ajax return.');
-        });
-    }
+        }
+        else {
+            objects.push(gistdata.data.files[filename].content);
+        }
+        render(objects[0]);
+        render_sections();
+        render_info();
+    }).error(function(e) {
+        console.log('Error on ajax return.');
+    });
     
     var showonly = getURLParameter('showonly');
     if (!showonly) showonly = '';
