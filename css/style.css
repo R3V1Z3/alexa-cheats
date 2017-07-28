@@ -29,15 +29,20 @@ body, html {
   padding: 0 20px;
 }
 
-#opening {
+#header {
   padding: 0 20px;
 }
 
-#opening h1 a:after {
-    content: 'heet';
-    padding-left: 2px;
-    color: #31C4F3;
-    font-weight: bold;
+#header h1 a:after {
+  content: 'heet';
+  padding-left: 2px;
+  color: #31C4F3;
+  font-weight: bold;
+}
+
+#header p a {
+  text-decoration: none;
+  color: #aaa;
 }
 
 #commands {
