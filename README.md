@@ -14,14 +14,14 @@ Up to 4 columns are currently allowed. Sections can be dragged around (kudos to 
 ## Command format
 The alexa-cheats.md file holds all the key details (commands, questions, etc). The file follows standard Markdown rules along with the following for best practice.
 
-Commands are arranged in sections with descriptive header:  
+Commands are arranged in sections with a descriptive header:  
 `## Time and Date`
 
-Each command should be added as an unordered list item using '- ':  
+Each command should be added under headers as unordered list items using '- ':  
 `- Command.`
 
-Use emphases (asterisks) to designate authors, song/movie titles and other special notes:  
+Emphases (asterisks) are used to designate authors, song/movie titles and other special notes:  
 `"Alexa, do you know Hal?" *- 2001*`
 
-Use strong emphases in Markdown (double underscore) and forward slashes to designate variations:  
+Strong emphases (double underscores) and forward slashes designate variations:  
 `__Hawaii/Paris/London__`
