@@ -207,7 +207,6 @@ Commands, questions and easter eggs for Amazon Alexa enabled devices: [https://u
 - "Alexa, clean my room."
 - "Alexa, how am I?"
 - "Alexa, I have a cold."
-- "Alexa, Happy New Year."
 - "Alexa, what's my girlfriend's name?"
 - "Alexa, what do you know about me?"
 - "Alexa, guess what?"
@@ -234,7 +233,7 @@ Commands, questions and easter eggs for Amazon Alexa enabled devices: [https://u
 - "Alexa, __what is zero divided by zero/divide by zero__?"
 - "Alexa, sudo make me a sandwich." *- XKCD comics*
 
-## Math and conversions
+## Math
 - "Alexa, what is __10/15/20__ __plus/minus/times/multiplied by/divided by__ __1/5__?"
 - "Alexa, what is __25/a hundred million billion__ squared?"
 - "Alexa, what is __3%/5%__ of __45/100__?"
@@ -245,7 +244,7 @@ Commands, questions and easter eggs for Amazon Alexa enabled devices: [https://u
 - "Alexa, what is the factorial of __5/10__?"
 - "Alexa, what's the square root of __25/64__?"
 
-## Calculations and conversions
+## Calculations and Conversions
 - "Alexa, how many __teaspoons/tablespoons__ in a __cup/gallon__?"
 - "Alexa, how many __feet/inches__ are in __two/three__ __miles/kilometers__?"
 - "Alexa, what is __two/three__ __miles/kilometers__ in __kilometers/miles__?"
@@ -303,11 +302,10 @@ Commands, questions and easter eggs for Amazon Alexa enabled devices: [https://u
 - "Alexa, what do you call a camel with three humps?"
 - "Alexa, How do you know she's a witch?"
 - "Alexa, Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo"
-- "Alexa, do a barrel roll."
 - "Alexa, that was a bad joke."
 - "Alexa, that was a good one!"
 
-## Odd and interesting
+## Odd and Interesting
 - "Alexa, high five!"
 - "Alexa, say the alphabet."
 - "Alexa, what is the best tablet?"
@@ -319,8 +317,7 @@ Commands, questions and easter eggs for Amazon Alexa enabled devices: [https://u
 - "Alexa, how do I get rid of a dead body?"
 - "Alexa, what is the sound of one hand clapping?"
 - "Alexa, how many angels can dance on the head of a pin?" (3 answers)
-- "Alexa, beatbox!"
-- "Alexa, give me a beat!"
+- "Alexa, __give me a beat/beatbox__!"
 - "Alexa, entertain me!"
 - "Alexa, surprise me!"
 - "Alexa, bark!"
@@ -582,7 +579,7 @@ Commands, questions and easter eggs for Amazon Alexa enabled devices: [https://u
 - "Alexa, who knows what evil lurks in the hearts of men?" *- The Shadow - Walter B. Gibson*
 - "Alexa, what is a bird in the hand worth?" *- A Hand-book of Proverbs - John Ray*
 
-## Famous quotes
+## Famous Quotes
 - "Alexa, what is a day without sunshine?" *- Steve Martin*
 - "Alexa, what is the truth behind King Tut?" *- Steve Martin*
 - "Alexa, can you smell what the Rock is cooking?" *- Dwayne 'The Rock' Johnson*
@@ -592,10 +589,11 @@ Commands, questions and easter eggs for Amazon Alexa enabled devices: [https://u
 ## Internet Memes
 - "Alexa, do you even lift, bro?"
 - "Alexa, come at me bro."
+- "Alexa, do a barrel roll."
 - "Alexa, what color is the dress?"
 - "Alexa, don't listen to him!"
 
-## Holiday greetings and references
+## Holiday Greetings and References
 - "Alexa, sing Happy Birthday!"
 - "Alexa, Merry Christmas!"
 - "Alexa, Happy Christmas!"
