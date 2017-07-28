@@ -1,6 +1,6 @@
 /* global $, jQuery, dragula, location */
 var TOC = [];
-var columns = 1;
+var columns = 2;
 jQuery(document).ready(function() {
     
     // get url parameters
@@ -11,7 +11,7 @@ jQuery(document).ready(function() {
     var showonly = getURLParameter('showonly');
     if (!showonly) showonly = '';
     var columns = getURLParameter('columns');
-    if (!columns) columns = 1;
+    if (!columns) columns = 2;
 
     function render(content) {
         var md = window.markdownit();
