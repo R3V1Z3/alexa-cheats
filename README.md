@@ -14,7 +14,7 @@ Up to 4 columns are currently allowed. Sections can be dragged around (kudos to 
 ## Command format
 The alexa-cheats.md file holds all the key details (commands, questions, etc). The file follows standard Markdown rules along with the following for best practice.
 
-Commands are arranged in sections with descriptive header:
+Commands are arranged in sections with descriptive header:  
 `## Time and Date`
 
 Each command should be added as an unordered list item using '- ':  
