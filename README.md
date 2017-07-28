@@ -1,7 +1,9 @@
 # Alexa Cheats
-This is an attempt at an exhaustive compilation of commands, questions and Easter eggs for Amazon Alexa. The goal is to keep them neatly contained in a plain text file where the contents can be printed with ease so I've opted to rely on Markdown for print-friendly formatting meanwhile also providing a web-accessible front-end that adds helpful features for easy browsing on the web.
+This project provides a web and print-friendly front-end for interacting with cheatsheets, specifically for Amazon Alexa commands. Initially, the main cheatsheet was bundled in this repo but I've moved it to GitHub Gist to facilitate discussion and changes.
 
-Web-accessible front-end here:  
+alexa-cheats.md: https://gist.github.com/Ugotsta/2a06603706fd7c2eb5c93f34ed316354
+
+The cheatsheet can be accessed here:  
 https://ugotsta.github.io/alexa-cheats/
 
 The front-end provides an info panel to help with navigation. It can be hidden by pressing <kbd>?</kbd> or <kbd>h</kbd>.
