@@ -33,6 +33,13 @@ body, html {
   padding: 0 20px;
 }
 
+#opening h1 a:after {
+    content: 'heet';
+    padding-left: 2px;
+    color: #31C4F3;
+    font-weight: bold;
+}
+
 #commands {
   display: block;
 }
@@ -79,7 +86,7 @@ li strong {
   border-radius: 5px;
   padding: 1px 3px;
   font-weight: normal;
-  color: #f00;
+  color: #009AD4;
   cursor: pointer;
 }
 
