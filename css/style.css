@@ -137,7 +137,6 @@ ul {
 }
 
 #info #hide:hover {
-  color: #000;
   cursor: pointer;
 }
 
@@ -149,15 +148,12 @@ ul {
   font-weight: bold;
 }
 
-#info #hide:hover .key {
-  background-color: #000;
-}
-
 #info #toc a {
   display: block;
   font-size: 0.65em;
   margin-left: 10px;
   text-decoration: none;
+  color: #31C4F3;
 }
 
 #info #toc h3 {
