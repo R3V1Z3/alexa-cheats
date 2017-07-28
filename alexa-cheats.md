@@ -1,5 +1,5 @@
-# Alexa Commands
-Compilation of commands and questions for Amazon Alexa enabled devices, with extra details and variations where applicable.
+# Alexa Cheats
+Cheatsheet of commands, questions and easter eggs for Amazon Alexa enabled devices: https://ugotsta.github.io/alexa-cheats/
 
 ## General
 - "Alexa, stop."
