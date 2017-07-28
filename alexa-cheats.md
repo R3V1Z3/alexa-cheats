@@ -1,5 +1,5 @@
 # Alexa Cheats
-Cheatsheet of commands, questions and easter eggs for Amazon Alexa enabled devices: [https://ugotsta.github.io/alexa-cheats/](https://ugotsta.github.io/alexa-cheats/)
+Commands, questions and easter eggs for Amazon Alexa enabled devices: [https://ugotsta.github.io/alexa-cheats/](https://ugotsta.github.io/alexa-cheats/)
 
 ## General
 - "Alexa, stop."
@@ -12,7 +12,7 @@ Cheatsheet of commands, questions and easter eggs for Amazon Alexa enabled devic
 - "Alexa, __softer/turn it down/volume down__."
 - "Alexa, help."
 - "Alexa, Simon says, '__Simon says/You are awesome!__'."
-- "Alexa, __say that again/can you repeat that__?"
+- "Alexa, __say that again./can you repeat that?__"
 
 ## Reference
 - "Alexa, spell '__sophisticated/catalyst/dehydrated__'."
@@ -51,7 +51,7 @@ Cheatsheet of commands, questions and easter eggs for Amazon Alexa enabled devic
 - "Alexa, what's the date?"
 - "Alexa, when is __Daylight Savings Time/Spring Equinox/the next full moon__?"
 - "Alexa, when is the first day of __Spring/Summer/Fall/Winter__?"
-- "Alexa, when it's __9AM/3pm__ in __Los Angeles/London/Tokyo__, what time is it in __New York/Paris/Canberra__?"
+- "Alexa, when it's __9 AM/3 PM__ in __Los Angeles/London/Tokyo__, what time is it in __New York/Paris/Canberra__?"
 
 ## Alarms and Timers
 - "Alexa, __wake me up at/set an alarm for__ __6:00 AM/9 PM/5 in the morning/7 in the evening__."
@@ -64,7 +64,7 @@ Cheatsheet of commands, questions and easter eggs for Amazon Alexa enabled devic
 - "Alexa, set a timer for __5/10__ minutes."
 - "Alexa, __how much time is left on my timer/how long is left on the timer__?"
 - "Alexa, set a __cake/pizza/turkey__ timer for __50/25__ minutes."
-- "Alexa, cancel the __cake/pizza/turkey__ timer."
+- "Alexa, cancel the __work/timeout/reading__ timer."
 - "Alexa, cancel the __10/25/50__ minute timer."
 - "Alexa, stop. (when alarm or timer is sounding)"
 
