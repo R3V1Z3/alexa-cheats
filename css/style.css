@@ -33,7 +33,7 @@ body, html {
   padding: 0 20px;
 }
 
-h1 #alexa-cheats a:after {
+h1#alexa-cheats a:after {
   content: 'heet';
   padding-left: 2px;
   color: #31C4F3;
