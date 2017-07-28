@@ -22,6 +22,11 @@ body, html {
   font-family: 'Roboto Slab', serif;
 }
 
+a {
+  color: #31C4F3;
+  text-decoration: none;
+}
+
 #wrapper {
   justify-content: center;
   align-items: center;
@@ -33,7 +38,11 @@ body, html {
   padding: 0 20px;
 }
 
-h1#alexa-cheats a:after {
+h1 a, h2 a, h3 a {
+  color: #000;
+}
+
+#alexa-cheats:after {
   content: 'heet';
   padding-left: 2px;
   color: #31C4F3;
@@ -97,6 +106,7 @@ li strong {
 }
 
 li strong:hover {
+  color: #F8981D;
   background-color: #f7f7f7;
 }
 
@@ -120,12 +130,44 @@ ul {
   top: 0px;
   right: 0px;
   width: 300px;
-  height: 600px;
+  height: 470px;
   box-shadow: -2px 2px 8px rgba(0,0,0,0.45);
   border-radius: 0px 0px 0px 10px;
-  padding: 20px;
+  padding: 10px;
   font-size: 0.85em;
   color: #fff;
+}
+
+#info h1, #info h1 a, #info h2, #info h3 {
+  color: #fff;
+  font-size: 1.1em;
+}
+
+#info #gist-url a {
+  font-size: 0.9em;
+}
+
+#info #gist-url a:hover {
+  color: #F8981D;
+}
+
+#info #toc {
+  max-height: 200px;
+  overflow-y: scroll;
+  background-color: rgba(49, 196, 243, 0.1);
+  border-radius: 5px;
+}
+
+#info #toc a {
+  display: block;
+  font-size: 0.85em;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #31C4F3;
+}
+
+#info #toc a:hover {
+  color: #F8981D;
 }
 
 #info #hide {
@@ -137,7 +179,12 @@ ul {
 }
 
 #info #hide:hover {
+  color: #F8981D;
   cursor: pointer;
+}
+
+#info #hide:hover .key {
+  background-color: #F8981D;
 }
 
 #info #hide .key {
@@ -148,30 +195,14 @@ ul {
   font-weight: bold;
 }
 
-#toc {
-  overflow-y: scroll;
-}
-
-#info #toc a {
-  display: block;
-  font-size: 0.65em;
-  margin-left: 10px;
-  text-decoration: none;
-  color: #31C4F3;
-}
-
-#info h3 {
-  font-size: 1em;
-  margin: 5px 0;
-}
-
 /* Scrollbar styling */
 ::-webkit-scrollbar {
-    background: transparent;
+    background: rgba(49, 196, 243, 0.2);
 }
 ::-webkit-scrollbar-thumb {
     background-color: rgba(49, 196, 243, 0.5);
-    border: solid whiteSmoke 4px;
+    /* border: solid whiteSmoke 4px; */
+    border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
     background-color: rgba(49, 196, 243, 1);

@@ -1,6 +1,7 @@
 /* global $, jQuery, dragula, location */
 var TOC = [];
 var columns = 2;
+var gist;
 jQuery(document).ready(function() {
     
     // get url parameters
@@ -139,6 +140,31 @@ jQuery(document).ready(function() {
   
     }
     
+    function render_info() {
+        
+        // render TOC
+        $('#toc').html( toc_html() );
+        
+        // command count
+        var command_count = $('li').length;
+        $('#command-count').html('Total commands: ' + command_count);
+        
+        // hide info
+        $('#hide').click(function() {
+            $('#info').toggle();
+        });
+        
+        var url = 'https://gist.github.com/' + gist;
+        $('#gist-url').html('<a href="' + url + '">' + gist + '</a>');
+        
+        // Add keypress to toggle info on '?' or 'h'
+        $(document).keypress(function(e) {
+            if(e.which == 104 || e.which == 63 || e.which == 72 || e.which == 47) {
+                $('#info').toggle();
+            }
+        });
+    }
+    
     function toc_html() {
         var html = '';
         // iterate section classes and get id name to compose TOC
@@ -149,36 +175,6 @@ jQuery(document).ready(function() {
             html += '</a>';
         });
         return html;
-    }
-    
-    function render_info() {
-        
-        // GitHub Ribbon
-        var html = '<a href="https://github.com/Ugotsta/alexa-cheats"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>';
-        
-        // render TOC
-        html += '<h3>Table of Contents</h3>';
-        html += '<div id="toc">';
-        html += toc_html();
-        html += '</div>';
-        
-        // command count
-        var command_count = $('li').length;
-        html += '<div id="command-count">Total commands: ' + command_count + '</div>';
-        
-        // hide info
-        html += '<div id="hide"><span class="key">?</span> - show/hide this panel</div>';
-        $('#info').html( html );
-        $('#hide').click(function() {
-            $('#info').toggle();
-        });
-        
-        // Add keypress to toggle info on '?' or 'h'
-        $(document).keypress(function(e) {
-            if(e.which == 104 || e.which == 63 || e.which == 72 || e.which == 47) {
-                $('#info').toggle();
-            }
-        });
     }
 
 });
