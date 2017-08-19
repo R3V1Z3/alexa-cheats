@@ -2,6 +2,8 @@
 var TOC = [];
 var columns = 2;
 var gist;
+var toggle_html='<span class="toggle">-</span>';
+
 jQuery(document).ready(function() {
     
     // get url parameters
@@ -9,7 +11,17 @@ jQuery(document).ready(function() {
     function getURLParameter(name) {
         return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
     }
+
+    // let user select section heading and header tags
+    var header = getURLParameter('header');
+    if (!header) header = 'h1';
+    var heading = getURLParameter('heading');
+    if (!heading) heading = 'h2';
     
+    var showonly = getURLParameter('showonly');
+    if (!showonly) showonly = '';
+    var columns = getURLParameter('columns');
+    if (!columns) columns = 2;
     var fontsize = getURLParameter('fontsize');
     if (!fontsize) fontsize = 110;
     $('body').css('font-size', fontsize + '%');
@@ -43,11 +55,6 @@ jQuery(document).ready(function() {
     }).error(function(e) {
         console.log('Error on ajax return.');
     });
-    
-    var showonly = getURLParameter('showonly');
-    if (!showonly) showonly = '';
-    var columns = getURLParameter('columns');
-    if (!columns) columns = 2;
 
     function render(content) {
         var md = window.markdownit();
@@ -107,13 +114,13 @@ jQuery(document).ready(function() {
     function render_sections() {
         
         // header section
-        $('h1').each(function() {
+        $(header).each(function() {
             $(this).nextUntil("h2").andSelf().wrapAll('<section id="header"/>');
             $(this).wrapInner('<a name="header"/>');
         });
         
         // command sections
-        $('h2').each(function() {
+        $(heading).each(function() {
             // get content of h2
             var name = $(this).text().toLowerCase().replace(/\s/g, "-");
             name = name.replace(',', '');
@@ -147,7 +154,7 @@ jQuery(document).ready(function() {
     function render_info() {
         
         // render TOC
-        $('#toc').html( toc_html() );
+        render_toc_html();
         
         // command count
         var command_count = $('li').length;
@@ -169,16 +176,36 @@ jQuery(document).ready(function() {
         });
     }
     
-    function toc_html() {
+    function render_toc_html() {
         var html = '';
         // iterate section classes and get id name to compose TOC
         $( '#commands .section' ).each(function() {
             var name = $( this ).attr( 'id' );
-            html += '<a href="#' + name + '">';
+            var toggle_hidden = '';
+            if ( $('#' + name).is(':hidden') ){
+                toggle_hidden ='class="hidden"';
+            }
+            html += '<a href="#' + name + '" ' + toggle_hidden + '>';
             html += name;
+            html += toggle_html;
             html += '</a>';
         });
-        return html;
+        $('#toc').html( html );
+        
+        // add click event to items
+        $( "#toc .toggle" ).click(function() {
+            var name = $(this).parent().attr('href');
+            console.log("parent name: " + name);
+            console.log("parent hasclass hidden: " + $(this).parent().hasClass('hidden')  );
+            // toggle hidden status
+            if( $(this).parent().hasClass('hidden') ) {
+                $(name).show();
+                $(this).parent().removeClass('hidden');
+            } else {
+                $(name).hide();
+            }
+            render_toc_html();
+        });
     }
 
 });
