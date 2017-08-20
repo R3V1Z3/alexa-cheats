@@ -23,8 +23,9 @@ jQuery(document).ready(function() {
     var columns = getURLParameter('columns');
     if (!columns) columns = 2;
     var fontsize = getURLParameter('fontsize');
-    if (!fontsize) fontsize = 110;
-    $('body').css('font-size', fontsize + '%');
+    if ( fontsize ) {
+        $('#wrapper').css('font-size', fontsize + '%');
+    }
     console.log(fontsize + '%');
     var gist = getURLParameter('gist');
     var filename = getURLParameter('filename');
