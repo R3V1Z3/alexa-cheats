@@ -7,6 +7,7 @@ https://ugotsta.github.io/alexa-cheats/
 The actual cheatsheet itself (alexa-cheats.md):  
 https://gist.github.com/Ugotsta/2a06603706fd7c2eb5c93f34ed316354
 
+## Controls
 The front-end provides an info panel to help with navigation. It can be hidden by pressing <kbd>?</kbd> or <kbd>h</kbd>.
 
 Url parameters can be used for added control:  
