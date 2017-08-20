@@ -1,10 +1,10 @@
 # Alexa Cheats
-This project provides a web and print-friendly front-end for interacting with cheatsheets, specifically for Amazon Alexa commands. It can be used with any cheatsheet in Markdown format that is hosted on GitHub Gist, though it's designed for use with Alexa voice command cheatsheets.
+An accessible, print-friendly way to interact with cheatsheets for Amazon Alexa commands. This project comprises a viewer and a cheatsheet file formatted with [Markdown](https://en.wikipedia.org/wiki/Markdown) and hosted through GitHub Gist.
 
 View it through the app here:  
 https://ugotsta.github.io/alexa-cheats/
 
-The actual cheatsheet itself (alexa-cheats.md) is located here:  
+The actual cheatsheet itself (alexa-cheats.md):  
 https://gist.github.com/Ugotsta/2a06603706fd7c2eb5c93f34ed316354
 
 The front-end provides an info panel to help with navigation. It can be hidden by pressing <kbd>?</kbd> or <kbd>h</kbd>.
