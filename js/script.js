@@ -26,7 +26,6 @@ jQuery(document).ready(function() {
     if ( fontsize ) {
         $('#wrapper').css('font-size', fontsize + '%');
     }
-    console.log(fontsize + '%');
     var gist = getURLParameter('gist');
     var filename = getURLParameter('filename');
     if (!gist) gist = '2a06603706fd7c2eb5c93f34ed316354';
@@ -115,19 +114,19 @@ jQuery(document).ready(function() {
     function render_sections() {
         
         // header section
-        $('#wrapper' + header).each(function() {
-            $(this).nextUntil("h2").andSelf().wrapAll('<section id="header"/>');
+        $('#wrapper ' + header).each(function() {
+            $(this).nextUntil(heading).andSelf().wrapAll('<section id="header"/>');
             $(this).wrapInner('<a name="header"/>');
         });
         
         // command sections
-        $('#wrapper' + heading).each(function() {
+        $('#wrapper ' + heading).each(function() {
             // get content of h2
             var name = $(this).text().toLowerCase().replace(/\s/g, "-");
             name = name.replace(',', '');
             // add anchor link
             $(this).wrapInner('<a class="handle" name="' + name + '"/>');
-            $(this).nextUntil("h2").andSelf().wrapAll('<div class="section" id="' + name + '"/>');
+            $(this).nextUntil(heading).andSelf().wrapAll('<div class="section" id="' + name + '"/>');
         });
         
         // wrap all command sections in new section
