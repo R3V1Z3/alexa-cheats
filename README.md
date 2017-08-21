@@ -12,20 +12,23 @@ The front-end provides an info panel to help with navigation and provide additio
 
 The info panel can be toggled by pressing <kbd>?</kbd> or <kbd>h</kbd>.
 
-The sections themselves and be dragged and moved into different locations as well. Simply click and drag on a section heading to move it where needed.
+Sections can be dragged around (kudos to the [Dragula](https://bevacqua.github.io/dragula/) project devs) for easier access and especially for getting things neatly arranged before printing.
 
 ### URL Parameters
+URL parameters can be used for added control. Just add an ? at the end of the url, then the parameter you wish to customize, then a value.
 
-URL parameters can be used for added control, for example:  
+For example, you can change the number of __columns__:
 https://ugotsta.github.io/alexa-cheats/?columns=1
 
-Up to 4 columns are currently allowed. Sections can be dragged around (kudos to the [Dragula](https://bevacqua.github.io/dragula/) project devs) for easier access and especially for getting things neatly arranged before printing.
+Up to 4 columns are currently allowed.
 
-Change the overall font-size using the fontsize parameter:  
+Change the overall font-size using the __fontsize__ parameter:  
 https://ugotsta.github.io/alexa-cheats/?fontsize=80
 
-View other documents by specifying a GitHub Gist ID:  
+View other documents by specifying a GitHub __Gist__ ID:  
 https://ugotsta.github.io/alexa-cheats/?gist=4907dd4e07dcf10ee8cde13f19b027e7
+
+This allows full customization of the contents by way of creating your own Gist file following Markdown rules as described below.
 
 #### Combining Parameters
 
