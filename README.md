@@ -23,12 +23,12 @@ Change the overall font-size using the fontsize parameter:
 https://ugotsta.github.io/alexa-cheats/?fontsize=80
 
 View other documents by specifying a GitHub Gist ID:
-https://ugotsta.github.io/alexa-cheats/?gist=2a06603706fd7c2eb5c93f34ed316354
+https://ugotsta.github.io/alexa-cheats/?gist=4907dd4e07dcf10ee8cde13f19b027e7
 
 #### Combining Parameters
 
 URL Parameters can also be combined using an ampersand:
-https://ugotsta.github.io/alexa-cheats/?gist=2a06603706fd7c2eb5c93f34ed316354&fontsize=80&columns=3
+https://ugotsta.github.io/alexa-cheats/?fontsize=80&columns=3
 
 ## Command Format
 The alexa-cheats.md file holds all the key details (commands, questions, etc). The file follows standard Markdown rules along with the following for best practice.
