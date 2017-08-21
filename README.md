@@ -17,7 +17,7 @@ Sections can be dragged around (kudos to the [Dragula](https://bevacqua.github.i
 ### URL Parameters
 URL parameters can be used for added control. Just add an ? at the end of the url, then the parameter you wish to customize, then a value.
 
-For example, you can change the number of __columns__:
+For example, you can change the number of __columns__:  
 https://ugotsta.github.io/alexa-cheats/?columns=1
 
 Up to 4 columns are currently allowed.
