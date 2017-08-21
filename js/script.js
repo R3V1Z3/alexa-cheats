@@ -115,13 +115,13 @@ jQuery(document).ready(function() {
     function render_sections() {
         
         // header section
-        $(header).each(function() {
+        $('#wrapper' + header).each(function() {
             $(this).nextUntil("h2").andSelf().wrapAll('<section id="header"/>');
             $(this).wrapInner('<a name="header"/>');
         });
         
         // command sections
-        $(heading).each(function() {
+        $('#wrapper' + heading).each(function() {
             // get content of h2
             var name = $(this).text().toLowerCase().replace(/\s/g, "-");
             name = name.replace(',', '');
