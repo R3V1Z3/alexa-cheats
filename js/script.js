@@ -147,7 +147,7 @@ jQuery(document).ready(function() {
             }
         }).on('drop', function (el) {
             // update toc
-            $('#toc').html( toc_html() );
+            $('#toc').html( render_toc_html() );
         });
   
     }
