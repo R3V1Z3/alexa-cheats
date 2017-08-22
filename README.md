@@ -1,7 +1,7 @@
 # Alexa Cheats
 An accessible, print-friendly way to interact with cheatsheets for Amazon Alexa commands. This project comprises a viewer and a cheatsheet file formatted with [Markdown](https://en.wikipedia.org/wiki/Markdown) and hosted through GitHub Gist.
 
-View it through the app here:  
+Check it out here:  
 https://ugotsta.github.io/alexa-cheats/
 
 The actual cheatsheet itself (alexa-cheats.md):  
@@ -28,7 +28,7 @@ https://ugotsta.github.io/alexa-cheats/?fontsize=80
 View other documents by specifying a GitHub __Gist__ ID:  
 https://ugotsta.github.io/alexa-cheats/?gist=4907dd4e07dcf10ee8cde13f19b027e7
 
-This allows full customization of the contents by way of creating your own Gist file following Markdown rules as described below.
+This allows greater customization of the contents by way of creating your own Gist file following Markdown rules as described below.
 
 #### Combining Parameters
 
@@ -49,3 +49,6 @@ Emphases (asterisks) are used to designate authors, song/movie titles and other 
 
 Strong emphases (double underscores) and forward slashes designate variations:  
 `__Hawaii/Paris/London__`
+
+## Advanced
+I've tried to keep this project as simple and intuitive as possible, providing a minimal set of options to help avoid any confusion. If you need more advanced features though, see the expanded CHEATSheet project here: https://github.com/Ugotsta/cheats
