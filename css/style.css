@@ -23,7 +23,7 @@ body, html {
 }
 
 a {
-  color: #31C4F3;
+  color: #3399CC;
   text-decoration: none;
 }
 
@@ -45,7 +45,7 @@ h1 a, h2 a, h3 a {
 #alexa-cheats:after {
   content: 'heet';
   padding-left: 2px;
-  color: #31C4F3;
+  color: #3399CC;
   font-weight: bold;
 }
 
@@ -100,9 +100,8 @@ li strong {
   border-radius: 5px;
   padding: 1px 3px;
   font-weight: normal;
-  color: #31C4F3;
+  color: #3399CC;
   cursor: pointer;
-  text-shadow: 0px 0px #31C4F3;
 }
 
 li strong:hover {
@@ -163,7 +162,7 @@ ul {
   font-size: 0.85em;
   margin-left: 10px;
   text-decoration: none;
-  color: #31C4F3;
+  color: #3399CC;
 }
 
 #info #toc a:hover {
@@ -191,11 +190,11 @@ ul {
   text-align: right;
   bottom: 20px;
   right: 20px;
-  color: #31C4F3;
+  color: #3399CC;
 }
 
 #info #hide:hover {
-  color: #F8981D;
+  color: #FF6600;
   cursor: pointer;
 }
 
@@ -204,7 +203,7 @@ ul {
 }
 
 #info #hide .key {
-  background-color: #31C4F3;
+  background-color: #3399CC;
   border-radius: 50%;
   padding: 0px 7px;
   color: #000;
@@ -217,7 +216,6 @@ ul {
 }
 ::-webkit-scrollbar-thumb {
     background-color: rgba(49, 196, 243, 0.5);
-    /* border: solid whiteSmoke 4px; */
     border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
